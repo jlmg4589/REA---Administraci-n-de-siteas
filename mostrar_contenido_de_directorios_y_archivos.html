@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Mostrar contenido de directorios y archivos | Administración básica decontenidos en Linux </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="José Luis Martínez García" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Administración básica decontenidos en Linux</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Administración básica de comandos en Linux</a></li>
+   <li><a href="tipos_de_ficheros.html" class="no-ch">Tipos de ficheros</a></li>
+   <li class="current-page-parent"><a href="directorios_y_archivos.html" class="current-page-parent daddy">Directorios y archivos</a>
+   <ul>
+      <li><a href="creacin_de_directorios_y_directorios.html" class="no-ch">Creación de directorios y directorios</a></li>
+      <li id="active"><a href="mostrar_contenido_de_directorios_y_archivos.html" class="active no-ch">Mostrar contenido de directorios y archivos</a></li>
+      <li><a href="eliminacin_de_directorios_y_directorios.html" class="no-ch">Eliminación de directorios y directorios</a></li>
+      <li><a href="copiar_mover_y_renombrar.html" class="no-ch">Copiar, mover y renombrar</a></li>
+   </ul>
+   </li>
+   <li><a href="evaluacin.html" class="no-ch">Evaluación</a></li>
+   <li><a href="autora_y_licencia.html" class="no-ch">Autoría y Licencia</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="creacin_de_directorios_y_directorios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="eliminacin_de_directorios_y_directorios.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Mostrar contenido de directorios y archivos</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id11">
+<div class="iDevice emphasis0" >
+<div id="ta11_134_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>1. Listar directorios.</p>
+<p>El comando que nos permite listar el contenido de un directorio, tanto a nivel de subdirectorios que hubiera como de archivos que contenga el directorio sobre el que se quiera listar es "<strong>ls</strong>".</p>
+<p>Sintáxis: <em><strong>ls [opciones] directorio/archivo</strong></em></p>
+<p>Opciones:</p>
+<p style="padding-left: 30px;"><strong>-l</strong>: muestra la lista en formato largo.</p>
+<p style="padding-left: 30px;"><strong>-t</strong>: ordena por fecha demodificación.</p>
+<p style="padding-left: 30px;"><strong>-r</strong>: invierte el orden de salida.</p>
+<p style="padding-left: 30px;"><strong>-d</strong>: muestra la información sobre el directorio en vez del contenido.</p>
+<p style="padding-left: 30px;"><strong>-R</strong>: lista recursuvamente el contenido de cada directorio.</p>
+<p style="padding-left: 30px;"><strong>-i</strong>: muestra el número de i-nodo.</p>
+<p style="padding-left: 30px;"><strong>-a</strong>: muestra los archivos ocultos.</p>
+<p style="padding-left: 30px;"><strong>-h</strong>: muestra el tamaña de cada fichero en K, M, G, etc.</p>
+<p style="padding-left: 30px;"><strong>-s</strong>: muestra el tamaño de cada fichero en bloques.</p>
+<p style="padding-left: 30px;"><strong>-S</strong>: lista los archivos ordenados por tamaño (de menor a mayor).</p>
+<p>El signidicado de los atributos arrojados por el comando "ls-l" son:</p>
+<p><img src="comando_ls.png" alt="" width="551" height="144"></p>
+<p>El comando "ls" lo podemos ajustar a nuestra conveniencia concatenando cada opción una tras otra como en el ejemplo siguiente:</p>
+<p><img src="ejemplo_del_comando_ls.png" alt="" width="789" height="321"></p>
+<p>2. Mostrar el contenido de un archivo.</p>
+<p>El primer comando que vamos estudiar para mostrar el contenido de un archivo es el comando "<strong>cat</strong>". Este comando muestra por la salida estándar (la pantalla) el contenido de un archivo, además de esto, podremos crear un archivo o incluso fusionar archivos.</p>
+<p>Sintáxis: <em><strong>cat [opciones] [lista_archivos] [{&lt; | &lt;&lt;} archivo]</strong></em></p>
+<p>Opciones:</p>
+<p style="padding-left: 30px;"><strong>-A</strong>: muestra todo el contenido del archivo, incluyendo los caracteres especiales.</p>
+<p style="padding-left: 30px;"><strong>-b</strong>: numera las líneas no vacías.</p>
+<p style="padding-left: 30px;"><strong>-n</strong>: numera todas las línea, incluidas las vacías.</p>
+<p>Dentro del tercer campo de la sintáxis vemos dos símbolos, los cuales actúan de la siguiente forma:</p>
+<p style="padding-left: 30px;"><strong>&gt;&gt;</strong>: sobrescribe si existe el archivo, o en caso contrario lo crea.</p>
+<p style="padding-left: 30px;"><strong>&gt;</strong>: añade al contenido de un fichero existente, o en caso contrario lo crea.</p>
+<p>Por tanto, se emplea la orden cat para crear archivos de escaso contenido de forma rápida. Para ello, se emplea el comando cat, seguido de "&gt;" o "&gt;&gt;" y de un archivo. De esta manera, el intérprete de comandos espera que introduzcamos texto hasta que pulsemos la combinación de teclas CTRL+D.</p>
+<p>Utilizando estos símbolos, podríamos crear dos archivos de texto y fusionarlos en uno solo.</p>
+<p><img src="Archivos1.png" alt="" width="812" height="158"></p>
+<p><strong>Otros comandos de impresión</strong></p>
+<p>Para imprimir el contenido de ficheros también podemos utilizar los siguientes comandos:</p>
+<ul>
+<li><strong>more [lista_archivos]</strong>: visualiza el contenido de los ficheros por páginas.</li>
+<li><strong>less [lista_archivos]</strong>: igual que more, pero es más versátil y potente, resultando ideal para ficheros grandes.</li>
+<li><strong>head [-n] lista_archivos</strong>: visualiza las n primeras líneas de uno o varios ficheros de texto, por defecto muestra 10 líneas.</li>
+<li><strong>tail [-n] lista_archivos</strong>: visualiza las n últimas líneas de uno o varios ficheros de texto, por defecto muestra 10 líneas.</li>
+</ul></div></div></section></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="creacin_de_directorios_y_directorios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="eliminacin_de_directorios_y_directorios.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
